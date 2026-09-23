@@ -1,0 +1,173 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #eef2f5;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+.action-bar {
+    max-width: 210mm;
+    margin: 0 auto 15px auto;
+    text-align: right;
+}
+
+.btn-print {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-print:hover {
+    background-color: #003d80;
+}
+
+/* A4 Sheet Layout */
+.a4-page {
+    background: #ffffff;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 15mm 15mm 15mm 15mm;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* KASS Header Format */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.header h3, .header h2, .header h4 {
+    margin: 3px 0;
+}
+
+.header p {
+    margin: 2px 0;
+    font-size: 13px;
+}
+
+.sub-title {
+    font-weight: bold;
+}
+
+.english-title {
+    font-size: 11px !important;
+    font-style: italic;
+}
+
+.instructions {
+    font-size: 11px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+}
+
+.instructions ol {
+    margin: 3px 0 0 20px;
+    padding: 0;
+}
+
+/* Table Format */
+.kass-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.kass-table th, .kass-table td {
+    border: 1px solid #000;
+    padding: 6px 8px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.kass-table th {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.kass-table input, .kass-table textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+/* Signature Section */
+.declaration-section {
+    font-size: 11px;
+    border: 1px dashed #666;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.declaration-section h4 {
+    margin: 0 0 5px 0;
+}
+
+.signature-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.sig-right {
+    text-align: center;
+}
+
+/* Footer Tag */
+.footer-meta {
+    margin-top: 25px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* A4 Print Engine Settings */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .a4-page {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 12mm 10mm 12mm 10mm;
+    }
+
+    .kass-table input, .kass-table textarea {
+        font-weight: bold;
+    }
+}
