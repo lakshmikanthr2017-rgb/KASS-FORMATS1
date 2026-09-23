@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASS Form A - Karnataka Arogya Sanjeevani Scheme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="no-print action-bar">
+        <button onclick="window.print()" class="btn-print">🖨️ Print Form (A4)</button>
+    </div>
+
+    <div class="a4-page">
+        <!-- Header Section -->
+        <div class="header">
+            <h3>ಅನುಬಂಧ-1</h3>
+            <p>ಸರ್ಕಾರದ ಆದೇಶ ಸಂಖ್ಯೆ: ಸಿಆಸುಇ 16 ಎಸ್‌ಎಂಆರ್ 2020 (ಭಾ-5) ದಿನಾಂಕ:09.03.2023</p>
+            <h2>FORM: A</h2>
+            <p class="sub-title">(ದ್ವಿಪ್ರತಿಯಲ್ಲಿ ಸಲ್ಲಿಸುವುದು)</p>
+            <h4>ಕರ್ನಾಟಕ ಆರೋಗ್ಯ ಸಂಜೀವಿನಿ ಯೋಜನೆಗೆ ಒಳಪಡಲು ಅರ್ಹ ಸರ್ಕಾರಿ ನೌಕರ ಸಲ್ಲಿಸಬೇಕಾದ ಅರ್ಜಿ ನಮೂನೆ</h4>
+            <p class="english-title">Form of application to be submitted by eligible government employee for enrollment into the Karnataka Arogya Sanjeevani Scheme (KASS)</p>
+        </div>
+
+        <div class="instructions">
+            <strong>ಸೂಚನೆ:</strong>
+            <ol>
+                <li>ಗಣಕಯಂತ್ರದಲ್ಲಿ ಅಳವಡಿಸಲು ಅನುಕೂಲವಾಗುವಂತೆ ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ಆಂಗ್ಲ ಭಾಷೆಯಲ್ಲಿ ಕೂಡ ಒದಗಿಸುವುದು.</li>
+                <li>ಒಂದು ಪ್ರತಿಯನ್ನು ನೌಕರರ ಸೇವಾ ಪುಸ್ತಕದಲ್ಲಿ ಸಂರಕ್ಷಿಸಿಡುವುದು.</li>
+                <li>ಅರ್ಜಿಯ ಒಂದು ಪ್ರತಿಯನ್ನು ಸರ್ಕಾರಿ ನೌಕರ ತಪ್ಪದೇ ತನ್ನ ದಾಖಲೆಗೆ ಇರಿಸಿಕೊಳ್ಳತಕ್ಕದ್ದು.</li>
+            </ol>
+        </div>
+
+        <!-- Form Table -->
+        <form id="kassForm">
+            <table class="kass-table">
+                <tr>
+                    <th style="width: 5%;">ಕ್ರ.ಸಂ</th>
+                    <th style="width: 45%;">ವಿವರಗಳು (Details in Kannada / English)</th>
+                    <th style="width: 50%;">ಮಾಹಿತಿ (Employee Details)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ಸರ್ಕಾರಿ ನೌಕರರ ಹೆಸರು (CAPITAL LETTERS)<br><small>Employee Name</small></td>
+                    <td><input type="text" id="empName" value="LAKSHMIKANTH R" required></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ತಂದೆ/ಪತಿಯ ಹೆಸರು<br><small>Father's / Husband's Name</small></td>
+                    <td><input type="text" id="fatherName"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ಸರ್ಕಾರಿ ನೌಕರರ ಕೆ.ಜಿ.ಐ.ಡಿ. ಸಂಖ್ಯೆ (As in HRMS)<br><small>KGID Number</small></td>
+                    <td><input type="text" id="kgidNumber" value="1958636" required></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ಮೊಬೈಲ್ ದೂರವಾಣಿ ಸಂಖ್ಯೆ<br><small>Mobile Number</small></td>
+                    <td><input type="tel" id="mobile"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ಇಮೇಲ್ ಐಡಿ (email ID)<br><small>Email Address</small></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>ಆಧಾ‌ರ್ ಸಂಖ್ಯೆ<br><small>Aadhaar Number</small></td>
+                    <td><input type="text" id="aadhaar" value="491287273375" required></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>ಹುದ್ದೆಯ ಹೆಸರು ಹಾಗೂ ವೇತನ ಶ್ರೇಣಿ<br><small>Designation & Pay Scale</small></td>
+                    <td><input type="text" id="designation"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>ಮನೆ ವಿಳಾಸ<br><small>Residential Address</small></td>
+                    <td><textarea id="address" rows="2"></textarea></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>ಪ್ರಸ್ತುತ ಪಡೆಯುತ್ತಿರುವ ಮೂಲವೇತನ<br><small>Present Basic Pay</small></td>
+                    <td><input type="text" id="basicPay"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>ಮಾತೃ ಇಲಾಖೆ<br><small>Parent Department</small></td>
+                    <td><input type="text" id="parentDept"></td>
+                </tr>
+            </table>
+
+            <!-- Declarations & Signatures -->
+            <div class="declaration-section">
+                <h4>FORM: A1 - ಸರ್ಕಾರಿ ನೌಕರರ ಸ್ವಯಂ ಘೋಷಣೆ (Self Declaration)</h4>
+                <p>1. ನಾನು ಮೇಲೆ ಒದಗಿಸಿರುವ ಎಲ್ಲಾ ಮಾಹಿತಿಗಳು ನಿಜವಾಗಿರುತ್ತವೆ.</p>
+                <p>2. ನಾನು KASS ಯೋಜನೆಯ ಎಲ್ಲಾ ಷರತ್ತು ಮತ್ತು ನಿಬಂಧನೆಗಳನ್ನು ಅರಿತುಕೊಂಡಿದ್ದು ಅವುಗಳಿಗೆ ಬದ್ಧನಾಗಿರುತ್ತೇನೆ.</p>
+            </div>
+
+            <div class="signature-block">
+                <div class="sig-left">
+                    <p>ದಿನಾಂಕ (Date): ____________</p>
+                    <p>ಸ್ಥಳ (Place): ____________</p>
+                </div>
+                <div class="sig-right">
+                    <br><br>
+                    <p>___________________________</p>
+                    <p><strong>ಸರ್ಕಾರಿ ನೌಕರನ ಸಹಿ</strong><br>(Signature of Employee)</p>
+                </div>
+            </div>
+        </form>
+
+        <!-- Document Metadata Footer -->
+        <div class="footer-meta">
+            <span>Form Reference: DPAR 16 SMR 2020</span>
+            <span class="prepared-by">Prepared by : LAKSHMIKANTH R</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
